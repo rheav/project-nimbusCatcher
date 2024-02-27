@@ -60,6 +60,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
 // Listener for when a tab is removed (closed)
 chrome.tabs.onRemoved.addListener((tabId, removeInfo) => {
-  // Clear the flag when the tab is closed
+  // Clear the flag when the tab is closeda
   chrome.storage.local.remove([`scriptRun_${tabId}`]);
 });
